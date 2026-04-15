@@ -1,0 +1,81 @@
+/* Reset básico para remover margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo principal da Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Separa a logo dos links */
+    align-items: center;            /* Alinha verticalmente no centro */
+    background-color: #1e293b;      /* Azul escuro (tom profissional) */
+    padding: 15px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Container da Logo */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espaço entre o V e o nome da empresa */
+    cursor: pointer;
+}
+
+/* Estilo do ícone "V" */
+.logo-v {
+    background-color: #f59e0b; /* Laranja/Amarelo engenharia */
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px; /* Bordas levemente arredondadas */
+}
+
+/* Estilo do nome da empresa */
+.brand-name {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Container dos Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Espaço entre os links */
+}
+
+/* Estilo dos Links */
+.nav-links a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse (Hover) */
+.nav-links a:hover {
+    color: #f59e0b; /* Fica da mesma cor do V da logo */
+}
+
+/* Responsividade básica para telas menores */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 20px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+}
