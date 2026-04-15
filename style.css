@@ -164,3 +164,50 @@
 .dot.active, .dot:hover {
     background-color: #3483fa; /* Azul ativo */
 }
+
+
+
+
+/* Container que organiza os produtos lado a lado */
+.produtos-container {
+    display: flex;           /* É isso aqui que força os itens a ficarem um do lado do outro */
+    flex-direction: row;     /* Garante que a direção seja em linha (horizontal) */
+    flex-wrap: wrap;         /* Se a tela for pequena, ele joga o que não couber pra linha de baixo */
+    gap: 40px;               /* Essa é a distância entre os boxes! Pode aumentar ou diminuir esse número */
+    justify-content: center; /* Centraliza os boxes no meio da tela */
+    padding: 40px;           /* Espaçamento em volta de tudo */
+    background-color: #f8f9fa; /* Fundo cinza clarinho (opcional) */
+}
+
+/* O quadrado de cada produto */
+.card-simples {
+    width: 280px; /* Largura fixa do card */
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombreado bem leve */
+}
+
+/* Ajuste da imagem para caber no quadrado */
+.card-simples img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Estilo do título do produto */
+.card-simples h3 {
+    margin-top: 15px;
+    color: #1e293b; /* Mesma cor da sua navbar */
+    font-size: 18px;
+}
+
+/* Estilo da descrição */
+.card-simples p {
+    margin-top: 10px;
+    color: #475569; /* Cinza escuro para facilitar a leitura */
+    font-size: 14px;
+    line-height: 1.5; /* Espaço entre as linhas do texto */
+}
