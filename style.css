@@ -212,3 +212,48 @@
     transform: translateY(-5px); /* Leve elevação ao passar o mouse */
     transition: all 0.3s ease;
 }
+
+
+/********** Estilos para a seção de Contato **********/
+.contato {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #f8f9fa;
+}
+
+.contato h2 {
+    font-size: 28px;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.contato p {
+    color: #475569;
+    margin-bottom: 30px;
+}
+
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 6px 32px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.05);
+}
+
+.whatsapp-icon {
+    width: 24px;            /* ← controla o tamanho do SVG */
+    height: 24px;
+}
