@@ -70,18 +70,7 @@
     color: #09a2e9; /* Fica da mesma cor do V da logo */
 }
 
-/* Responsividade básica para telas menores */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 15px 20px;
-        gap: 20px;
-    }
-    
-    .nav-links {
-        gap: 15px;
-    }
-}
+
 
 
 
@@ -104,7 +93,7 @@
     min-width: 100%; /* Cada imagem ocupa 100% do container */
     height: auto;
     object-fit: cover; /* Garante que a imagem não distorça */
-    max-height: 400px; /* Altura máxima do banner (ajuste como preferir) */
+    max-height: 600px; /* Altura máxima do banner*/
 }
 
 /* Botões de Voltar e Avançar (Estilo Mercado Livre) */
@@ -130,7 +119,7 @@
 
 .carousel-btn:hover {
     background-color: #09a2e9;
-    transform: translateY(-50%) scale(1.10);
+    transform: translateY(-50%) scale(1.10); /* Aumenta um pouco ao passar o mouse */
 }
 
 .prev {
@@ -166,7 +155,13 @@
 }
 
 
-
+.title-catalog {
+    text-align: center;
+    margin-top: 40px;
+    color: #1e293b; /* Mesma cor da navbar para manter a identidade visual */
+    font-size: 28px;
+    font-weight: 700;
+}
 
 /* Container que organiza os produtos lado a lado */
 .produtos-container {
@@ -210,4 +205,10 @@
     color: #475569; /* Cinza escuro para facilitar a leitura */
     font-size: 14px;
     line-height: 1.5; /* Espaço entre as linhas do texto */
+}
+
+.card-simples:hover { /* Efeito ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra mais forte ao passar o mouse */
+    transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+    transition: all 0.3s ease;
 }

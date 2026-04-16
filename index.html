@@ -18,30 +18,33 @@
             <li><a href="#catalogo">Catálogo</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
+        
     </nav>
 
 
+    <section id="inicio" class="banner">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="./img/_image.webp" alt="Banner 1">
+                <img src="./img/hq720.jpg" alt="Banner 2">
+                <img src="./img/oitogramasdeproteina.jpg" alt="Banner 3">
+            </div>
 
-    <div class="carousel-container">
-        <div class="carousel-slide">
-            <img src="./img/_image.webp" alt="Banner 1">
-            <img src="./img/hq720.jpg" alt="Banner 2">
-            <img src="./img/oitogramasdeproteina.jpg" alt="Banner 3">
+            <button id="previous" class="carousel-btn prev">&#10094;</button>
+            <button id="next" class="carousel-btn next">&#10095;</button>
+
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
         </div>
+    </section>
 
-        <button id="previous" class="carousel-btn prev">&#10094;</button>
-        <button id="next" class="carousel-btn next">&#10095;</button>
-
-        <div class="carousel-dots">
-            <span class="dot active" onclick="currentSlide(0)"></span>
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-        </div>
-    </div>
 
 
     <section id="catalogo" class="catalogo">
-        <h2>Catálogo de Produtos</h2>
+        <h2 class="title-catalog">ENGENHEIRO, CONFIRA OS PRODUTOS!</h2>
 
         <div class="produtos-container">
 
@@ -66,6 +69,22 @@
         </div>
     </section>
 
+
+
+    <section id="contato" class="contato">
+    <h2>Entre em Contato</h2>
+    <p>Fale conosco pelo WhatsApp!</p>
+
+    <a 
+        href="https://wa.me/5549999359097?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos." 
+        target="_blank" 
+        class="btn-whatsapp"
+    >
+        <svg source src="./img/whatsapp.svg" alt="Ícone do WhatsApp" class="whatsapp-icon"></svg>
+        Falar no WhatsApp
+    </a>
+    </section>
+        
     <script src="script.js"></script>
 
 </body>
