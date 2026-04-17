@@ -213,6 +213,12 @@
     transition: all 0.3s ease;
 }
 
+.btn-product {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 
 /********** Estilos para a seção de Contato **********/
 .contato {
