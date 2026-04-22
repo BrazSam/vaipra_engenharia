@@ -6,7 +6,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
+/* Permite que a rolagem seja suave ao clicar nos links de navegação */
+html {
+        scroll-behavior: smooth;
+    }
 
 
 /* Estilo principal da Navbar */
@@ -216,7 +219,7 @@
 .btn-product {
     background: transparent;
     border: none;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 
@@ -262,4 +265,12 @@
 .whatsapp-icon {
     width: 24px;            /* ← controla o tamanho do SVG */
     height: 24px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1e293b; /* Mesma cor da navbar para manter a identidade visual */
+    color: #e2e8f0; /* Texto em cinza claro para contraste */
+    font-size: 14px;
 }
