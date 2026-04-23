@@ -202,8 +202,9 @@
         .preco-pix {
             font-size: 32px;
             font-weight: 800;
+            
             color: #1e293b;
-            line-height: 1;
+            line-height: 1.5;
         }
         .preco-pix span { font-size: 16px; font-weight: 600; color: #475569; }
 
@@ -268,7 +269,7 @@
         .garantia-item {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 10px; 
             font-size: 13px;
             color: #475569;
         }
@@ -283,6 +284,16 @@
             color: #e2e8f0;
             font-size: 14px;
             margin-top: 60px;
+        }
+
+
+        /* Descrição do produto */
+        .descricao {
+            margin-top: 30px;
+            margin-left: 250px;
+            margin-right: 250px;
+            line-height: 1.6;
+            color: #475569;
         }
 
         /********** Estilos para a seção de Contato **********/
