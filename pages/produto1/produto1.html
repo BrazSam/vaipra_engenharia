@@ -4,9 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/pages/style.css">
-    <title>Document</title>
+    <title>VaiPra Engenharia</title>
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="brand">
+            <div class="logo-v">V</div>
+            <span class="brand-name">VaiPra Engenharia</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="/index.html">Catálogo</a></li>
+            <li><a href="/index.html#catalogo">Contato</a></li>
+            <li><a href="/index.html#contato">Carrinho</a></li>
+        </ul>
+        
+    </nav>
+
+
+
+    <!-- PRODUTO -->
+    <div class="produto-page">
+
+        <!-- GALERIA -->
+        <div class="galeria">
+            <div class="galeria-main">
+                <img id="imgPrincipal" src="/img/kinect.webp" alt="Monster de Café">
+            </div>
+            <div class="galeria-thumbs">
+                <div class="thumb active" onclick="trocarImagem(this, '/img/kinect.webp')">
+                    <img src="/img/kinect.webp" alt="Foto 1">
+                </div>
+                <div class="thumb" onclick="trocarImagem(this, '/img/kinect.webp')">
+                    <img src="/img/kinect.webp" alt="Foto 2">
+                </div>
+                <div class="thumb" onclick="trocarImagem(this, '/img/kinect.webp')">
+                    <img src="/img/kinect.webp" alt="Foto 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- INFORMAÇÕES -->
+        <div class="produto-info">
+            <div class="badge-full">⚡ Completo</div>
+
+            <h1 class="produto-titulo">Xbox 720 com Kinect que conecta com as ondas cerebrais</h1>
+
+
+            <!-- Tamanho -->
+            <div>
+                <p class="variante-label">Tamanho: <span id="tamanhoSelecionado">473ml</span></p>
+                <div class="variante-btns">
+                    <button class="var-btn active" onclick="selecionarVariante(this, 'tamanhoSelecionado')">473ml</button>
+                    <button class="var-btn" onclick="selecionarVariante(this, 'tamanhoSelecionado')">355ml</button>
+                    <button class="var-btn" onclick="selecionarVariante(this, 'tamanhoSelecionado')">Pack 6un</button>
+                </div>
+            </div>
+
+            
+
+            <p class="vendedor">Vendido por <strong>VaiPra Engenharia</strong></p>
+
+            <!-- Características -->
+            <div class="caracteristicas">
+                <h4>Principais características</h4>
+                <ul>
+                    <li>Xbox 720</li>
+                    <li>Kinect que conecta com as ondas cerebrais</li>
+                    <li>4 cores</li>
+                    <li>Processador de alta performance</li>
+                    <li>Memória RAM de 128GB</li>
+                    <li>Perfeito pra quem é engenheiro e quer sentir a tecnologia de ponta</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PAINEL DE PREÇO -->
+        <div class="painel-preco">
+            <div>
+                <span class="preco-original">R$ 29,90</span>
+                <span class="badge-desconto">10% off</span>
+            </div>
+
+            <div>
+                <div class="preco-pix">R$ <strong>26</strong><span>,91</span></div>
+                <div class="preco-pix-label">no Pix</div>
+            </div>
+
+            
+
+            <div class="divider"></div>
+
+            <button class="btn-comprar-agora" onclick="alert('Redirecionando para o checkout...')">
+                Comprar agora
+            </button>
+            <button class="btn-adicionar-sacola" onclick="adicionarSacola()">
+                🛒 Adicionar à sacola
+            </button>
+
+
+            <div class="divider"></div>
+
+            <div class="garantias">
+                <div class="garantia-item">
+                    <span class="garantia-icon">🛡️</span>
+                    <span><strong>VaiPra garante</strong> a sua compra</span>
+                </div>
+                <div class="garantia-item">
+                    <span class="garantia-icon">🔄</span>
+                    <span><strong>Devolução Gratuita</strong> em até 7 dias</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section id="contato" class="contato">
+    <h2>Entre em Contato</h2>
+    <p>Fale conosco pelo WhatsApp!</p>
+
+    <a 
+        href="https://wa.me/5549999359097?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos." 
+        target="_blank" 
+        class="btn-whatsapp"
+    >
+        <img src="/img/svg/WhatsApp.svg.webp" alt="Ícone do WhatsApp" class="whatsapp-icon">
+        Falar no WhatsApp
+    </a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 VaiPra Engenharia. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/pages/script.js"></script>
+
 </body>
 </html>
