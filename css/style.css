@@ -8,16 +8,19 @@
 
 /* Permite que a rolagem seja suave ao clicar nos links de navegação */
 html {
-        scroll-behavior: smooth;
-    }
+    scroll-behavior: smooth;
+}
 
 
 /* Estilo principal da Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Separa a logo dos links */
-    align-items: center;            /* Alinha verticalmente no centro */
-    background-color: #1e293b;      /* Azul escuro (tom profissional) */
+    justify-content: space-between;
+    /* Separa a logo dos links */
+    align-items: center;
+    /* Alinha verticalmente no centro */
+    background-color: #1e293b;
+    /* Azul escuro (tom profissional) */
     padding: 15px 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -26,13 +29,15 @@ html {
 .brand {
     display: flex;
     align-items: center;
-    gap: 12px; /* Espaço entre o V e o nome da empresa */
+    gap: 12px;
+    /* Espaço entre o V e o nome da empresa */
     cursor: pointer;
 }
 
 /* Estilo do ícone "V" */
 .logo-v {
-    background-color: #09a2e9; /* Laranja/Amarelo engenharia */
+    background-color: #09a2e9;
+    /* Laranja/Amarelo engenharia */
     color: #ffffff;
     font-size: 24px;
     font-weight: 800;
@@ -41,7 +46,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 6px; /* Bordas levemente arredondadas */
+    border-radius: 6px;
+    /* Bordas levemente arredondadas */
 }
 
 /* Estilo do nome da empresa */
@@ -56,7 +62,8 @@ html {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px; /* Espaço entre os links */
+    gap: 30px;
+    /* Espaço entre os links */
 }
 
 /* Estilo dos Links */
@@ -70,7 +77,8 @@ html {
 
 /* Efeito ao passar o mouse (Hover) */
 .nav-links a:hover {
-    color: #09a2e9; /* Fica da mesma cor do V da logo */
+    color: #09a2e9;
+    /* Fica da mesma cor do V da logo */
 }
 
 
@@ -82,21 +90,27 @@ html {
     position: relative;
     width: 100%;
     max-width: 100vw;
-    overflow: hidden; /* Esconde o que passar da tela */
-    margin-top: 0; /* Ajuste se a sua navbar for fixa (position: fixed) */
+    overflow: hidden;
+    /* Esconde o que passar da tela */
+    margin-top: 0;
+    /* Ajuste se a sua navbar for fixa (position: fixed) */
 }
 
 .carousel-slide {
     display: flex;
     width: 100%;
-    transition: transform 0.5s ease-in-out; /* Efeito suave de transição */
+    transition: transform 0.5s ease-in-out;
+    /* Efeito suave de transição */
 }
 
 .carousel-slide img {
-    min-width: 100%; /* Cada imagem ocupa 100% do container */
+    min-width: 100%;
+    /* Cada imagem ocupa 100% do container */
     height: auto;
-    object-fit: cover; /* Garante que a imagem não distorça */
-    max-height: 600px; /* Altura máxima do banner*/
+    object-fit: cover;
+    /* Garante que a imagem não distorça */
+    max-height: 600px;
+    /* Altura máxima do banner*/
 }
 
 /* Botões de Voltar e Avançar (Estilo Mercado Livre) */
@@ -105,14 +119,15 @@ html {
     top: 50%;
     transform: translateY(-50%);
     background-color: #09a2e9;
-    color: white; /* Azul parecido com o do ML */
+    color: white;
+    /* Azul parecido com o do ML */
     border: none;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 10;
     transition: background-color 0.3s, transform 0.2s ease-in-out;
     display: flex;
@@ -122,7 +137,8 @@ html {
 
 .carousel-btn:hover {
     background-color: #09a2e9;
-    transform: translateY(-50%) scale(1.10); /* Aumenta um pouco ao passar o mouse */
+    transform: translateY(-50%) scale(1.10);
+    /* Aumenta um pouco ao passar o mouse */
 }
 
 .prev {
@@ -153,73 +169,100 @@ html {
     transition: background-color 0.3s;
 }
 
-.dot.active, .dot:hover {
-    background-color: #3483fa; /* Azul ativo */
+.dot.active,
+.dot:hover {
+    background-color: #3483fa;
+    /* Azul ativo */
 }
 
 
 .title-catalog {
     text-align: center;
     margin-top: 40px;
-    color: #1e293b; /* Mesma cor da navbar para manter a identidade visual */
+    color: #1e293b;
+    /* Mesma cor da navbar para manter a identidade visual */
     font-size: 28px;
     font-weight: 700;
 }
 
 /* Container que organiza os produtos lado a lado */
 .produtos-container {
-    display: flex;           /* É isso aqui que força os itens a ficarem um do lado do outro */
-    flex-direction: row;     /* Garante que a direção seja em linha (horizontal) */
-    flex-wrap: wrap;         /* Se a tela for pequena, ele joga o que não couber pra linha de baixo */
-    gap: 40px;               /* Essa é a distância entre os boxes! Pode aumentar ou diminuir esse número */
-    justify-content: center; /* Centraliza os boxes no meio da tela */
-    padding: 40px;           /* Espaçamento em volta de tudo */
-    background-color: #f8f9fa; /* Fundo cinza clarinho (opcional) */
+    display: flex;
+    /* É isso aqui que força os itens a ficarem um do lado do outro */
+    flex-direction: row;
+    /* Garante que a direção seja em linha (horizontal) */
+    flex-wrap: wrap;
+    /* Se a tela for pequena, ele joga o que não couber pra linha de baixo */
+    gap: 40px;
+    /* Essa é a distância entre os boxes! Pode aumentar ou diminuir esse número */
+    justify-content: center;
+    /* Centraliza os boxes no meio da tela */
+    padding: 40px;
+    /* Espaçamento em volta de tudo */
+    background-color: #f8f9fa;
+    /* Fundo cinza clarinho (opcional) */
 }
 
 /* O quadrado de cada produto */
 .card-simples {
-    width: 280px; /* Largura fixa do card */
+    width: 280px;
+    /* Largura fixa do card */
+    height: 100%;
+    /* Estica para igualar o maior card da linha */
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
-    border-radius: 8px; /* Bordas arredondadas */
+    border-radius: 8px;
+    /* Bordas arredondadas */
     padding: 15px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombreado bem leve */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* Sombreado bem leve */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Ajuste da imagem para caber no quadrado */
 .card-simples img {
     width: 100%;
-    height: auto;
+    height: 160px;
+    /* Altura fixa para manter um padrão */
+    object-fit: cover;
+    /* Evita que a imagem distorça */
     border-radius: 4px;
 }
 
 /* Estilo do título do produto */
 .card-simples h3 {
     margin-top: 15px;
-    color: #1e293b; /* Mesma cor da sua navbar */
+    color: #1e293b;
+    /* Mesma cor da sua navbar */
     font-size: 18px;
 }
 
 /* Estilo da descrição */
 .card-simples p {
     margin-top: 10px;
-    color: #475569; /* Cinza escuro para facilitar a leitura */
+    color: #475569;
+    /* Cinza escuro para facilitar a leitura */
     font-size: 14px;
-    line-height: 1.5; /* Espaço entre as linhas do texto */
+    line-height: 1.5;
+    /* Espaço entre as linhas do texto */
 }
 
-.card-simples:hover { /* Efeito ao passar o mouse */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra mais forte ao passar o mouse */
-    transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+.card-simples:hover {
+    /* Efeito ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra mais forte ao passar o mouse */
+    transform: translateY(-5px);
+    /* Leve elevação ao passar o mouse */
     transition: all 0.3s ease;
 }
 
 .btn-product {
     background: transparent;
     border: none;
-    cursor: pointer;    
+    cursor: pointer;
+    display: flex;
 }
 
 
@@ -244,7 +287,8 @@ html {
 .btn-whatsapp {
     display: inline-flex;
     align-items: center;
-    gap: 10px; /* Espaço entre o ícone e o texto */
+    gap: 10px;
+    /* Espaço entre o ícone e o texto */
     background-color: #25d366;
     color: white;
     text-decoration: none;
@@ -263,14 +307,17 @@ html {
 }
 
 .whatsapp-icon {
-    width: 24px;            /* ← controla o tamanho do SVG */
+    width: 24px;
+    /* ← controla o tamanho do SVG */
     height: 24px;
 }
 
 .footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #1e293b; /* Mesma cor da navbar para manter a identidade visual */
-    color: #e2e8f0; /* Texto em cinza claro para contraste */
+    background-color: #1e293b;
+    /* Mesma cor da navbar para manter a identidade visual */
+    color: #e2e8f0;
+    /* Texto em cinza claro para contraste */
     font-size: 14px;
 }
