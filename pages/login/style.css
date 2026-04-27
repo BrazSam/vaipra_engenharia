@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+
+/* 1 valor = margin:20px - todos os lados*/
+/* 2 valores = 20px 30px - Em cima e embaixo, dos lados*/
+/* 3 valores = 20px 10px 30px - Em cima, dos lados, embaixo*/
+/* 4 valores = em cima, direita, embaixo, esquerda*/
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./img/img.jpg');
+    background-size: cover;
+    /* para garantir que a imagem fique na tela toda */
+    background-position: center;
+    /* mesma coisa de cima */
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 420px;
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    backdrop-filter: blur(2Npx);
+}
+
+.container h1 {
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.campo-preencher {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+
+}
+
+.campo-preencher input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    outline: none;
+    /* tira borda ao clicar */
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.campo-preencher::placeholder {
+    color: #ffffffaa;
+}
+
+.campo-preencher i {
+    position: absolute;
+    /*pra colocar em um ponto especifico */
+    right: 20px;
+    /* right significa que ele vai tudo para a direita e volta a quanitdade de px que colocar */
+    top: 50%;
+    /* nao da certo só ele sozinho pq ele vai localizar o meio do input e vai colocar o icone a partir dali, nao vai ficar o icone no centro */
+    transform: translateY(-50%);
+    /*precisa disso pra ficar bem ao centro */
+    font-size: 20px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    /*cor ao clicar na checkbox*/
+    margin-right: 5px;
+    /*separar um pouco a checkbox do texto*/
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    /*pra sumir sublinhado no texto*/
+    color: #fffffff5;
+    transition: 0.5s;
+
+}
+
+.remember-forgot a:hover {
+    color: #ffffffa1;
+
+}
+
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, .1);
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.login:hover {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, .2);
+    color: #fff;
+
+}
+
+.login:hover::after {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, .1);
+    margin-top: 20px;
+    transition: 0.5;
+}
+
+.register-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.register-link a:hover {
+    color: #ffffffa1;
+}
