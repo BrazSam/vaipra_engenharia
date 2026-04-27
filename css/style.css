@@ -32,6 +32,8 @@ html {
     gap: 12px;
     /* Espaço entre o V e o nome da empresa */
     cursor: pointer;
+    text-decoration: none;
+    /* Remove o sublinhado q estava */
 }
 
 /* Estilo do ícone "V" */
