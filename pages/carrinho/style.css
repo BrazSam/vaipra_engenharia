@@ -1,0 +1,234 @@
+/* Reset global é feito no css/style.css */
+
+/* Fundo da tela do carrinho */
+body {
+    background-color: #f8fafc; /* Fundo cinza super claro, ótimo para e-commerce */
+}
+
+/* Container Principal do Carrinho */
+.cart-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.cart-container h1 {
+    color: #1e293b;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.cart-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Área da Lista de Produtos */
+.cart-items {
+    flex: 2; /* Ocupa mais espaço que o resumo */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Cada Item do Carrinho */
+.cart-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+    gap: 20px;
+    border: 1px solid #e2e8f0;
+    transition: 0.3s;
+}
+
+.cart-item:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #f1f5f9;
+}
+
+/* Detalhes de Texto do Item */
+.item-details {
+    flex: 2;
+}
+
+.item-details h3 {
+    color: #1e293b;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.item-details p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Controles de Quantidade (+ / -) */
+.item-quantity {
+    display: flex;
+    align-items: center;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.item-quantity button {
+    background-color: #f8fafc;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #475569;
+    transition: 0.3s;
+}
+
+.item-quantity button:hover {
+    background-color: #e2e8f0;
+    color: #1e293b;
+}
+
+.item-quantity input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    font-family: inherit;
+    color: #1e293b;
+    font-weight: 600;
+    outline: none;
+}
+
+/* Preço e Lixeira */
+.item-price {
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 18px;
+    width: 120px;
+    text-align: right;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #cbd5e1;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.remove-btn:hover {
+    color: #ef4444; /* Fica vermelho ao passar o mouse */
+    transform: scale(1.1);
+}
+
+
+/* Área do Resumo do Pedido */
+.cart-summary {
+    flex: 1; /* Ocupa a lateral */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    position: sticky;
+    top: 100px; /* Faz a barra rolar junto com a tela e parar no topo */
+}
+
+.cart-summary h2 {
+    color: #1e293b;
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #475569;
+    font-size: 16px;
+}
+
+.cart-summary hr {
+    border: 0;
+    height: 1px;
+    background-color: #e2e8f0;
+    margin: 20px 0;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    color: #1e293b;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.checkout-btn {
+    width: 100%;
+    background-color: #09a2e9;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(9, 162, 233, 0.2);
+}
+
+.checkout-btn:hover {
+    background-color: #078bc9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(9, 162, 233, 0.3);
+}
+
+.continue-shopping {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #09a2e9;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.continue-shopping:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade Básica para o Carrinho */
+@media (max-width: 900px) {
+    .cart-content {
+        flex-direction: column;
+    }
+    
+    .cart-summary {
+        width: 100%;
+        position: static;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .item-price {
+        text-align: center;
+    }
+}
