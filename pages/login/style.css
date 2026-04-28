@@ -15,7 +15,7 @@
 
 
 body {
-    background-color: #1e293b;
+    background-color: #fff;
 }
 
 .login-wrapper {
@@ -30,13 +30,15 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 420px;
-    background-color: transparent;
-    border: 3px solid rgba(255, 255, 255, .2);
+    background-color: #1e293b;
+    /* Fundo azul escuro da Navbar para contrastar com a tela branca */
+    border: 1px solid #334155;
     border-radius: 15px;
     color: #fff;
-    padding: 30px 40px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    backdrop-filter: blur(10px);
+    /* Mantém seu texto branco original legível */
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    /* Sombra mais moderna e suave */
 }
 
 .container h1 {
@@ -66,8 +68,18 @@ body {
     padding: 20px 45px 20px 20px;
 }
 
+/* Corrige o fundo quando o Google faz preenchimento automático (Autofill) */
+.campo-preencher input:-webkit-autofill,
+.campo-preencher input:-webkit-autofill:hover,
+.campo-preencher input:-webkit-autofill:focus,
+.campo-preencher input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #1e293b inset !important;
+    -webkit-text-fill-color: #fff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 .campo-preencher::placeholder {
-    color: #ffffffaa;
+    color: #334155;
 }
 
 .campo-preencher i {
@@ -121,7 +133,7 @@ body {
     font-weight: 600;
     box-shadow: rgba(0, 0, 0, .1);
     margin-top: 20px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .login:hover {
