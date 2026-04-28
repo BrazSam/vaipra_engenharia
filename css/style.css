@@ -107,8 +107,13 @@ html {
     /* Efeito suave de transição */
 }
 
-.carousel-slide img {
+.carousel-slide a {
     min-width: 100%;
+    display: block;
+}
+
+.carousel-slide a img {
+    width: 100%;
     /* Cada imagem ocupa 100% do container */
     height: auto;
     object-fit: cover;
