@@ -1,10 +1,12 @@
 /* Estilos específicos para a página de Contato (Baseado no visual do Mercado Livre) */
 
 body {
-    background-color: #ebebeb; /* Fundo cinza claro típico do ML */
+    background-color: #ebebeb;
+    /* Fundo cinza claro típico do ML */
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que o footer fique no fim da página */
+    min-height: 100vh;
+    /* Garante que o footer fique no fim da página */
 }
 
 /* Container central para a página de contato */
@@ -19,10 +21,12 @@ body {
 /* Sobrescrevendo a classe global .contato para virar um card centralizado e clean */
 .contato {
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.12); /* Sombra suave padrão ML */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    /* Sombra suave padrão ML */
     width: 100%;
-    max-width: 500px; /* Largura máxima do card */
+    max-width: 500px;
+    /* Largura máxima do card */
     padding: 50px 40px;
     text-align: center;
     display: flex;
@@ -61,15 +65,19 @@ body {
 /* Ajustando o botão do WhatsApp */
 .btn-whatsapp {
     width: 100%;
-    max-width: 320px; /* Limite de tamanho pro botão */
+    max-width: 320px;
+    /* Limite de tamanho pro botão */
     justify-content: center;
     padding: 14px 24px;
-    border-radius: 6px; /* Borda menos arredondada, estilo ML */
+    border-radius: 6px;
+    /* Borda menos arredondada, estilo ML */
     font-size: 16px;
-    box-shadow: none; /* Tirando sombra extra do botão global */
+    box-shadow: none;
+    /* Tirando sombra extra do botão global */
 }
 
 .btn-whatsapp:hover {
-    transform: translateY(-2px); /* Efeito suave de elevação */
-    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+    transform: translateY(-2px);
+    /* Efeito suave de elevação */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
 }

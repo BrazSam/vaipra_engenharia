@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../pages/perfil/login/style.css">
 
     <title>Cadastrar - VaiPra Engenharia</title>
 </head>
@@ -21,18 +21,33 @@
         <ul class="nav-links">
             <li><a href="./index.html">Perfil</a></li>
             <li><a href="../../carrinho/index.html">Carrinho</a></li>
-            <li><a href="../../../index.html#contato">Contato</a></li>
+            <li><a href="../../contato/index.html">Contato</a></li>
         </ul>
     </nav>
 
     <div class="login-wrapper">
         <main class="container">
             <form>
-                <h1>Login</h1>
+                <h1>Cadastre-se</h1>
+                <div class="campo-preencher">
+                    <input placeholder="Nome Completo" type="text">
+                    <!-- placeholder é o texto que fica aparcecendo dentro que quando começa a escrever some, type email serve pra quando clicar ele aparecer embaixo users ja usados -->
+                    <i class="bx bxs-user"></i>
+                </div>
+                <div class="campo-preencher">
+                    <input placeholder="CPF" type="text">
+                    <!-- placeholder é o texto que fica aparcecendo dentro que quando começa a escrever some, type email serve pra quando clicar ele aparecer embaixo users ja usados -->
+                    <i class="bx bx-check-shield"></i>
+                </div>
+                <div class="campo-preencher">
+                    <input placeholder="Telefone" type="text">
+                    <!-- placeholder é o texto que fica aparcecendo dentro que quando começa a escrever some, type email serve pra quando clicar ele aparecer embaixo users ja usados -->
+                    <i class="bx bx-phone"></i>
+                </div>
                 <div class="campo-preencher">
                     <input placeholder="E-mail" type="email">
                     <!-- placeholder é o texto que fica aparcecendo dentro que quando começa a escrever some, type email serve pra quando clicar ele aparecer embaixo users ja usados -->
-                    <i class="bx bxs-user"></i>
+                    <i class="bx bx-at"></i>
                 </div>
                 <div class="campo-preencher">
                     <input placeholder="Senha" type="password"> <!-- mesma coisa do input de cima -->
@@ -45,13 +60,13 @@
                         <input type="checkbox">
                         Lembrar senha
                     </label>
-                    <a href="#">Esqueci a senha</a>
+
                 </div>
 
-                <button type="submit" class="login">Login</button>
+                <button type="submit" class="login">Cadastrar</button>
 
                 <div class="register-link">
-                    <p>Não tem uma conta? <a href="../cadastrar/index.html">Cadastre-se</a></p>
+                    <p>Já tem uma conta <a href="../login/index.html">Faça Login</a></p>
                 </div>
 
             </form>
