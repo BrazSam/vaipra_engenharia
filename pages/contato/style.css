@@ -1,0 +1,75 @@
+/* Estilos específicos para a página de Contato (Baseado no visual do Mercado Livre) */
+
+body {
+    background-color: #ebebeb; /* Fundo cinza claro típico do ML */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o footer fique no fim da página */
+}
+
+/* Container central para a página de contato */
+.contato-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+/* Sobrescrevendo a classe global .contato para virar um card centralizado e clean */
+.contato {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.12); /* Sombra suave padrão ML */
+    width: 100%;
+    max-width: 500px; /* Largura máxima do card */
+    padding: 50px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato h2 {
+    font-size: 26px;
+    color: #333333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contato p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+/* Adicionando um ícone ilustrativo no topo do card (opcional para ficar bonito) */
+.contato-icon {
+    background-color: #f3f4f6;
+    color: #09a2e9;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+/* Ajustando o botão do WhatsApp */
+.btn-whatsapp {
+    width: 100%;
+    max-width: 320px; /* Limite de tamanho pro botão */
+    justify-content: center;
+    padding: 14px 24px;
+    border-radius: 6px; /* Borda menos arredondada, estilo ML */
+    font-size: 16px;
+    box-shadow: none; /* Tirando sombra extra do botão global */
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-2px); /* Efeito suave de elevação */
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+}

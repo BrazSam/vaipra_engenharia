@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cadastrar - VaiPra Engenharia</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="brand">
+            <div class="logo-v">V</div>
+            <span class="brand-name">VaiPra Engenharia</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="./index.html">Perfil</a></li>
+            <li><a href="../../carrinho/index.html">Carrinho</a></li>
+            <li><a href="../../../index.html#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="login-wrapper">
+        <main class="container">
+            <form>
+                <h1>Login</h1>
+                <div class="campo-preencher">
+                    <input placeholder="E-mail" type="email">
+                    <!-- placeholder é o texto que fica aparcecendo dentro que quando começa a escrever some, type email serve pra quando clicar ele aparecer embaixo users ja usados -->
+                    <i class="bx bxs-user"></i>
+                </div>
+                <div class="campo-preencher">
+                    <input placeholder="Senha" type="password"> <!-- mesma coisa do input de cima -->
+                    <i class="bx bxs-lock-alt"></i>
+                </div>
+
+                <div class="remember-forgot">
+
+                    <label>
+                        <input type="checkbox">
+                        Lembrar senha
+                    </label>
+                    <a href="#">Esqueci a senha</a>
+                </div>
+
+                <button type="submit" class="login">Login</button>
+
+                <div class="register-link">
+                    <p>Não tem uma conta? <a href="../cadastrar/index.html">Cadastre-se</a></p>
+                </div>
+
+            </form>
+        </main>
+    </div>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <p>Fale conosco pelo WhatsApp!</p>
+
+        <a href="https://wa.me/5549999359097?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos."
+            target="_blank" class="btn-whatsapp">
+            <img src="../../../img/svg/WhatsApp.svg.webp" alt="Ícone do WhatsApp" class="whatsapp-icon">
+            Falar no WhatsApp
+        </a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 VaiPra Engenharia. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../../../pages/script.js"></script>
+</body>
+
+</html>
